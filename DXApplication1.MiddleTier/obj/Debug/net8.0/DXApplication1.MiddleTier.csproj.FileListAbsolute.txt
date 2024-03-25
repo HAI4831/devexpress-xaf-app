@@ -1,0 +1,8 @@
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.csproj.AssemblyReference.cache
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.GeneratedMSBuildEditorConfig.editorconfig
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.AssemblyInfoInputs.cache
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.AssemblyInfo.cs
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.csproj.CoreCompileInputs.cache
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.MvcApplicationPartsAssemblyInfo.cs
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.MvcApplicationPartsAssemblyInfo.cache
+D:\programdata\netFramework\source\repos\Shop\DXApplication1.MiddleTier\obj\Debug\net8.0\DXApplication1.MiddleTier.sourcelink.json

@@ -1,0 +1,16 @@
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\bin\Debug\net8.0\Shop.Module.deps.json
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\bin\Debug\net8.0\Shop.Module.dll
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\bin\Debug\net8.0\Shop.Module.pdb
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.csproj.AssemblyReference.cache
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.GeneratedMSBuildEditorConfig.editorconfig
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.AssemblyInfoInputs.cache
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.AssemblyInfo.cs
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.csproj.CoreCompileInputs.cache
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.dll
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\refint\Shop.Module.dll
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.pdb
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\ref\Shop.Module.dll
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.BusinessObjects.PhieuNhapRpt.resources
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.csproj.GenerateResource.cache
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.sourcelink.json
+D:\programdata\netFramework\source\repos\Shop\Shop.Module\obj\Debug\net8.0\Shop.Module.BusinessObjects.PhieuXuatRpt.resources

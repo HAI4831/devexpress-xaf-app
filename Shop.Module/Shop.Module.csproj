@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\chi.svg" />
+    <None Remove="Images\khach.svg" />
+    <None Remove="Images\nhanvien.svg" />
+    <None Remove="Images\nhomkhach.svg" />
+    <None Remove="Images\nhomsp.svg" />
+    <None Remove="Images\phieunhap.svg" />
+    <None Remove="Images\phieuxuat.svg" />
+    <None Remove="Images\printer.svg" />
+    <None Remove="Images\product.svg" />
+    <None Remove="Images\thu.svg" />
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\chi.svg" />
+    <EmbeddedResource Include="Images\khach.svg" />
+    <EmbeddedResource Include="Images\nhanvien.svg" />
+    <EmbeddedResource Include="Images\nhomkhach.svg" />
+    <EmbeddedResource Include="Images\nhomsp.svg" />
+    <EmbeddedResource Include="Images\phieunhap.svg" />
+    <EmbeddedResource Include="Images\phieuxuat.svg" />
+    <EmbeddedResource Include="Images\printer.svg" />
+    <EmbeddedResource Include="Images\product.svg" />
+    <EmbeddedResource Include="Images\thu.svg" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Chart" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.CloneObject.Xpo" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Dashboards" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Office" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.ViewVariantsModule" Version="23.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="23.2.4" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="23.2.4" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="23.2.4" />
+    <PackageReference Include="Azure.Identity" Version="1.10.3" />
+    <PackageReference Include="DevExpress.Win.Design" Version="23.2.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.34.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

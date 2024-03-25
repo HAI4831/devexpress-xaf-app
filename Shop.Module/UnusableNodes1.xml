@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="PhieuNhap_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="nhanvien" PropertyName="nhanvien" />
+        <PropertyEditor Id="khachHang" PropertyName="khachHang" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PhieuNhap">
+              <LayoutItem Id="SoCT" RelativeSize="5.783866057838661" />
+              <LayoutItem Id="NgayCT" RelativeSize="4.566210045662101" />
+              <LayoutItem Id="SoHD" RelativeSize="4.566210045662101" />
+              <LayoutItem Id="NgayHD" Index="3" RelativeSize="85.08371385083714" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

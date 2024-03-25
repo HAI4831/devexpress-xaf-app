@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="PhieuChi_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PhieuChi">
+              <LayoutItem Id="SoCT" RelativeSize="5.783866057838661" />
+              <LayoutItem Id="NgayCT" RelativeSize="4.566210045662101" />
+              <LayoutItem Id="SoHD" RelativeSize="4.566210045662101" />
+              <LayoutItem Id="NgayHD" Index="5" RelativeSize="75.95129375951294" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PhieuThu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PhieuThu">
+              <LayoutItem Id="SoCT" RelativeSize="4.462474645030426" />
+              <LayoutItem Id="NgayCT" RelativeSize="3.2454361054766734" />
+              <LayoutItem Id="SoHD" RelativeSize="3.2454361054766734" />
+              <LayoutItem Id="NgayHD" Index="5" RelativeSize="82.55578093306288" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

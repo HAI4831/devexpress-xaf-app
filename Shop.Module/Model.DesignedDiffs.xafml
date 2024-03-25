@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Shop">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="danhmuchang" Caption="Danh mục hàng" ImageName="BO_Note_32x32" Index="0" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="NhomSP_ListView" ViewId="NhomSP_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="Sanpham_ListView" ViewId="Sanpham_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="khachhang" Caption="Khách hàng" ImageName="BO_Person" Index="1" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="NhomKhach_ListView" ViewId="NhomKhach_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="KhachHang_ListView" ViewId="KhachHang_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="chungtu" Index="2" Caption="Chứng từ" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="PhieuNhap_ListView" ViewId="PhieuNhap_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="PhieuXuat_ListView" ViewId="PhieuXuat_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+          <Item Id="PhieuThu_ListView" ViewId="PhieuThu_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+          <Item Id="PhieuChi_ListView" ViewId="PhieuChi_ListView" ObjectKey="" Index="3" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="KhachHang_ListView" Removed="True" />
+          <Item Id="NhanVien_ListView" ViewId="NhanVien_ListView" ObjectKey="" IsNewNode="True" Removed="True" />
+          <Item Id="NhomKhach_ListView" Removed="True" />
+          <Item Id="NhomSP_ListView" Removed="True" />
+          <Item Id="PhieuChi_ListView" Removed="True" />
+          <Item Id="PhieuNhap_ListView" Removed="True" />
+          <Item Id="PhieuThu_ListView" Removed="True" />
+          <Item Id="PhieuXuat_ListView" Removed="True" />
+          <Item Id="Sanpham_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="23.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="23.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="DoanhthuRpt_ListView" IsGroupPanelVisible="False" GroupSummary="Count;Soluong:Sum,(Số Lượng: SUM={0:0.##});Doanhthu:Sum,(Doanh thu: SUM={0:0.##});Giavon:Sum,(Giá vốn: SUM={0:0.##});Laigop:Sum,(Lãi gộp: SUM={0:0.##})" ShowAutoFilterRow="False" AutoExpandAllGroups="True" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="MaSP" Index="0" SortOrder="Ascending" GroupIndex="1" />
+        <ColumnInfo Id="TenSP" Index="1" />
+        <ColumnInfo Id="Dvt" Index="2" />
+        <ColumnInfo Id="Nhom" SortOrder="Ascending" GroupIndex="0" Index="3" />
+        <ColumnInfo Id="Soluong">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="Doanhthu">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="Giavon">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="Laigop">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="DongNhap_DetailView">
+      <Items>
+        <PropertyEditor Id="Hang" PropertyName="Hang" IsNewNode="True" />
+        <PropertyEditor Id="phieu" PropertyName="phieu" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="DongNhap" RelativeSize="100">
+              <LayoutGroup Id="DongNhap_col1" RelativeSize="66.34304207119742">
+                <LayoutItem Id="Hang" ViewItem="Hang" Index="0" RelativeSize="6.270627062706271" IsNewNode="True" />
+                <LayoutItem Id="phieu" ViewItem="phieu" Index="1" RelativeSize="4.9504950495049505" IsNewNode="True" />
+                <LayoutItem Id="soLuong" ViewItem="soLuong" Index="2" RelativeSize="4.9504950495049505" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="donGia" RelativeSize="4.9504950495049505" Index="3" />
+                <LayoutItem Id="chietKhau" RelativeSize="78.87788778877888" Index="4" />
+              </LayoutGroup>
+              <LayoutGroup Id="DongNhap_col2" RelativeSize="33.65695792880259">
+                <LayoutItem Id="vat" RelativeSize="6.270627062706271" />
+                <LayoutItem Id="Thanhtien" RelativeSize="93.72937293729373" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DongXuat_DetailView">
+      <Items>
+        <PropertyEditor Id="Hang" PropertyName="Hang" IsNewNode="True" />
+        <PropertyEditor Id="Phieu" PropertyName="Phieu" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="DongXuat" RelativeSize="100">
+              <LayoutGroup Id="DongXuat_col1" RelativeSize="50">
+                <LayoutItem Id="Hang" ViewItem="Hang" Index="0" RelativeSize="13.91941391941392" IsNewNode="True" />
+                <LayoutItem Id="SoLuong" Index="1" RelativeSize="10.989010989010989" />
+                <LayoutItem Id="DonGia" Index="2" RelativeSize="10.989010989010989" />
+                <LayoutItem Id="Vat" Index="3" RelativeSize="64.1025641025641" />
+              </LayoutGroup>
+              <LayoutGroup Id="DongXuat_col2" RelativeSize="50">
+                <LayoutItem Id="ChietKhau" RelativeSize="13.91941391941392" />
+                <LayoutItem Id="ThanhTien" RelativeSize="10.989010989010989" />
+                <LayoutItem Id="DongiaVon" RelativeSize="75.0915750915751" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KhachHang_DetailView">
+      <Items>
+        <PropertyEditor Id="Nhom" PropertyName="Nhom" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="38.46153846153846">
+            <LayoutGroup Id="KhachHang" RelativeSize="100">
+              <LayoutGroup Id="KhachHang_col1" RelativeSize="36.30862329803328">
+                <LayoutItem Id="Tenkhach" RelativeSize="35.84905660377358" />
+                <LayoutItem Id="Diachi" RelativeSize="28.30188679245283" />
+                <LayoutItem Id="Dienthoai" RelativeSize="35.84905660377358" />
+              </LayoutGroup>
+              <LayoutGroup Id="KhachHang_col2" Caption="KhachHang_col2" RelativeSize="63.69137670196672" Direction="Vertical">
+                <LayoutItem Id="Email" ViewItem="Email" Index="0" RelativeSize="35.84905660377358" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Ghichu" ViewItem="Ghichu" Index="1" RelativeSize="28.30188679245283" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Nhom" ViewItem="Nhom" Index="2" RelativeSize="35.84905660377358" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="61.53846153846154">
+            <LayoutGroup Id="phieunhaps" RelativeSize="100">
+              <LayoutItem Id="phieunhaps" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="phieuxuats" RelativeSize="100">
+              <LayoutItem Id="phieuxuats" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="phieuThus" RelativeSize="100">
+              <LayoutItem Id="phieuThus" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="phieuChis" RelativeSize="100">
+              <LayoutItem Id="phieuChis" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PhieuChi_DetailView">
+      <Items>
+        <PropertyEditor Id="keToan" PropertyName="keToan" IsNewNode="True" />
+        <PropertyEditor Id="khach" PropertyName="khach" IsNewNode="True" />
+        <PropertyEditor Id="Oid" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PhieuChi" RelativeSize="100">
+              <LayoutGroup Id="PhieuChi_col1" RelativeSize="49.899193548387096">
+                <LayoutItem Id="SoCT" RelativeSize="8.118081180811808" />
+                <LayoutItem Id="NgayCT" RelativeSize="5.904059040590406" />
+                <LayoutItem Id="soTien" Index="2" RelativeSize="5.904059040590406" />
+                <LayoutItem Id="SoHD" ViewItem="SoHD" Index="3" RelativeSize="5.904059040590406" IsNewNode="True" />
+                <LayoutItem Id="NgayHD" ViewItem="NgayHD" Index="4" RelativeSize="5.904059040590406" IsNewNode="True" />
+                <LayoutItem Id="khach" ViewItem="khach" Index="5" RelativeSize="5.904059040590406" IsNewNode="True" />
+                <LayoutItem Id="keToan" ViewItem="keToan" Index="6" RelativeSize="62.361623616236166" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PhieuChi_col2" Caption="PhieuChi_col2" RelativeSize="50.100806451612904">
+                <LayoutItem Id="NgayHD" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="SoHD" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="PhieuChi_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="soTien">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="PhieuNhap_DetailView">
+      <Items>
+        <PropertyEditor Id="keToan" PropertyName="keToan" IsNewNode="True" />
+        <PropertyEditor Id="khach" PropertyName="khach" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="46.01990049751244">
+            <LayoutGroup Id="PhieuNhap" RelativeSize="100">
+              <LayoutGroup Id="PhieuNhap_col1" RelativeSize="48.1089258698941">
+                <LayoutItem Id="SoCT" RelativeSize="27.941176470588236" />
+                <LayoutItem Id="NgayCT" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="SoHD" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="khach" ViewItem="khach" Index="3" RelativeSize="27.941176470588236" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PhieuNhap_col2" RelativeSize="51.8910741301059">
+                <LayoutItem Id="NgayHD" RelativeSize="27.941176470588236" />
+                <LayoutItem Id="Ghichu" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="Tongtien" ViewItem="Tongtien" Index="2" RelativeSize="22.058823529411764" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="keToan" ViewItem="keToan" Index="3" RelativeSize="27.941176470588236" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="dongNhaps_Group" Direction="Vertical" RelativeSize="53.98009950248756">
+            <LayoutItem Id="dongNhaps" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="PhieuNhap_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="Tongtien">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="PhieuThu_DetailView">
+      <Items>
+        <PropertyEditor Id="keToan" PropertyName="keToan" IsNewNode="True" />
+        <PropertyEditor Id="khach" PropertyName="khach" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PhieuThu" RelativeSize="100">
+              <LayoutGroup Id="PhieuThu_col1" RelativeSize="51.939655172413794">
+                <LayoutItem Id="SoCT" RelativeSize="4.756756756756757" />
+                <LayoutItem Id="NgayCT" RelativeSize="3.4594594594594597" />
+                <LayoutItem Id="soTien" ViewItem="soTien" Index="2" RelativeSize="3.4594594594594597" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="SoHD" ViewItem="SoHD" Index="3" RelativeSize="3.4594594594594597" IsNewNode="True" />
+                <LayoutItem Id="NgayHD" ViewItem="NgayHD" Index="4" RelativeSize="3.4594594594594597" IsNewNode="True" />
+                <LayoutItem Id="khach" ViewItem="khach" Index="5" RelativeSize="3.4594594594594597" IsNewNode="True" />
+                <LayoutItem Id="keToan" ViewItem="keToan" Index="6" RelativeSize="3.4594594594594597" IsNewNode="True" />
+                <LayoutItem Id="Ghichu" ViewItem="Ghichu" Index="7" RelativeSize="74.48648648648648" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PhieuThu_col2" Caption="PhieuThu_col2" RelativeSize="48.060344827586206">
+                <LayoutItem Id="NgayHD" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Ghichu" Removed="True" />
+                <LayoutItem Id="SoHD" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="PhieuThu_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="soTien">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="PhieuXuat_DetailView">
+      <Items>
+        <PropertyEditor Id="keToan" PropertyName="keToan" IsNewNode="True" />
+        <PropertyEditor Id="khach" PropertyName="khach" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="60.906515580736546">
+            <LayoutGroup Id="PhieuXuat" RelativeSize="83.25581395348837">
+              <LayoutGroup Id="PhieuXuat_col1" RelativeSize="49.92987377279103">
+                <LayoutItem Id="SoCT" RelativeSize="27.941176470588236" />
+                <LayoutItem Id="NgayCT" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="SoHD" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="NgayHD" RelativeSize="27.941176470588236" />
+              </LayoutGroup>
+              <LayoutGroup Id="PhieuXuat_col2" RelativeSize="50.07012622720897">
+                <LayoutItem Id="Ghichu" RelativeSize="27.941176470588236" />
+                <LayoutItem Id="Tongtien" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="Giavon" RelativeSize="22.058823529411764" />
+                <LayoutItem Id="Laigop" RelativeSize="27.941176470588236" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto2f527407-777b-48f9-a4c2-981518d22d62" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="16.74418604651163" IsNewNode="True">
+              <LayoutItem Id="khach" ViewItem="khach" Index="0" RelativeSize="49.93197278911565" IsNewNode="True" />
+              <LayoutItem Id="keToan" ViewItem="keToan" Index="1" RelativeSize="50.06802721088435" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Dongxuats_Group" Direction="Vertical" RelativeSize="39.093484419263454">
+            <LayoutItem Id="Dongxuats" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Sanpham_DetailView">
+      <Items>
+        <PropertyEditor Id="Nhom" PropertyName="Nhom" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="25.456389452332658">
+            <LayoutGroup Id="Sanpham" RelativeSize="100" Caption="Sản phẩm">
+              <LayoutGroup Id="Sanpham_col1" RelativeSize="38.685344827586206">
+                <LayoutItem Id="Masp" RelativeSize="22.797927461139896" />
+                <LayoutItem Id="Mavach" RelativeSize="16.580310880829014" />
+                <LayoutItem Id="TenSP" RelativeSize="16.580310880829014" />
+                <LayoutItem Id="Dvt" RelativeSize="16.580310880829014" />
+                <LayoutItem Id="Vat" RelativeSize="27.46113989637306" />
+              </LayoutGroup>
+              <LayoutGroup Id="Sanpham_col2" RelativeSize="61.314655172413794">
+                <LayoutItem Id="Giaban" RelativeSize="22.797927461139896" />
+                <LayoutItem Id="Soton" RelativeSize="16.580310880829014" />
+                <LayoutItem Id="Giatriton" RelativeSize="16.580310880829014" />
+                <LayoutGroup Id="Autobe9c88ab-d0fe-4b50-a3ff-ad48e35404b2" ShowCaption="False" Caption="Autobe9c88ab-d0fe-4b50-a3ff-ad48e35404b2(14)" Direction="Vertical" Index="3" RelativeSize="44.04145077720207" IsNewNode="True">
+                  <LayoutItem Id="Ghichu" ViewItem="Ghichu" Index="0" RelativeSize="48.23529411764706" IsNewNode="True" />
+                  <LayoutItem Id="Nhom" ViewItem="Nhom" Index="1" RelativeSize="51.76470588235294" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Ghichu" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="74.54361054766734">
+            <LayoutGroup Id="dongnhaps" RelativeSize="100">
+              <LayoutItem Id="dongnhaps" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="dongxuats" RelativeSize="100">
+              <LayoutItem Id="dongxuats" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
